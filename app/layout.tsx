@@ -33,7 +33,9 @@ export default function RootLayout({
           <Navigation />
         </header>
 
-        <main className="container mx-auto text-white">{children}</main>
+        <main className="container mx-auto px-3 text-white md:px-8">
+          {children}
+        </main>
       </body>
     </html>
   );

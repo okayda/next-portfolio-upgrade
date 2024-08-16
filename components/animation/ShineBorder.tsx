@@ -17,7 +17,7 @@ export default function ShineBorder({
   borderRadius = 6,
   borderWidth = 1,
   duration = 14,
-  color = "#fff",
+  color = "#FFF",
   className,
   children,
 }: ShineBorderProps) {
@@ -40,7 +40,7 @@ export default function ShineBorder({
             "--border-radius": `${borderRadius}px`,
             "--border-radius-child": `${borderRadius * 0.2}px`,
             "--shine-pulse-duration": `${duration}s`,
-            "--mask-linear-gradient": `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,
+            "--mask-linear-gradient": `linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0)`,
             "--background-radial-gradient": `radial-gradient(transparent,transparent, ${!(color instanceof Array) ? color : color.join(",")},transparent,transparent)`,
           } as React.CSSProperties
         }
