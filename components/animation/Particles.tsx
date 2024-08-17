@@ -1,32 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-
-interface MousePosition {
-  x: number;
-  y: number;
-}
-
-function MousePosition(): MousePosition {
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  return mousePosition;
-}
+import React, { useEffect, useRef } from "react";
 
 interface ParticlesProps {
   className?: string;
@@ -34,7 +8,6 @@ interface ParticlesProps {
   staticity?: number;
   ease?: number;
   size?: number;
-  refresh?: boolean;
   color?: string;
   vx?: number;
   vy?: number;
@@ -59,10 +32,7 @@ function hexToRgb(hex: string): number[] {
 export default function Particles({
   className = "",
   quantity = 100,
-  staticity = 50,
-  ease = 50,
   size = 0.4,
-  refresh = false,
   color = "#FFF",
   vx = 0,
   vy = 0,
@@ -71,8 +41,6 @@ export default function Particles({
   const canvasContainerRef = useRef<HTMLDivElement>(null);
   const context = useRef<CanvasRenderingContext2D | null>(null);
   const circles = useRef<any[]>([]);
-  const mousePosition = MousePosition();
-  const mouse = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
   const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
 
@@ -89,31 +57,9 @@ export default function Particles({
     };
   }, [color]);
 
-  useEffect(() => {
-    onMouseMove();
-  }, [mousePosition.x, mousePosition.y]);
-
-  useEffect(() => {
-    initCanvas();
-  }, [refresh]);
-
   const initCanvas = () => {
     resizeCanvas();
     drawParticles();
-  };
-
-  const onMouseMove = () => {
-    if (canvasRef.current) {
-      const rect = canvasRef.current.getBoundingClientRect();
-      const { w, h } = canvasSize.current;
-      const x = mousePosition.x - rect.left - w / 2;
-      const y = mousePosition.y - rect.top - h / 2;
-      const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
-      if (inside) {
-        mouse.current.x = x;
-        mouse.current.y = y;
-      }
-    }
   };
 
   type Circle = {
@@ -241,12 +187,6 @@ export default function Particles({
       }
       circle.x += circle.dx + vx;
       circle.y += circle.dy + vy;
-      circle.translateX +=
-        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) /
-        ease;
-      circle.translateY +=
-        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
-        ease;
 
       drawCircle(circle, true);
 
