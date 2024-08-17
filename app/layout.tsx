@@ -11,7 +11,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Jhon Queñano",
+  title: "Jhon Queñano 4v",
   description:
     "Created with heart and passion, my portfolio showcases a range of different projects.",
 };

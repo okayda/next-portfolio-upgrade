@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import { MailCheck, FileCheck2 } from "lucide-react";
@@ -10,12 +9,12 @@ export default function HeroContent() {
     <div className="mt-40">
       <div className="md:grid md:grid-cols-2">
         <div className="lg-l:self-center">
-          <div className="xs:justify-center mb-6 flex md:justify-start">
+          <div className="mb-6 flex xs:justify-center md:justify-start">
             <GradientText text="Jhon Que&ntilde;ano" />
           </div>
 
-          <div className="xs:text-center xs:mx-auto xs:mb-12 mb-10 max-w-[460px] md:mx-0 md:max-w-[500px] md:text-left">
-            <h1 className="xs:mb-12 mb-8 text-6xl font-bold text-gray-100">
+          <div className="mb-10 max-w-[460px] xs:mx-auto xs:mb-12 xs:text-center md:mx-0 md:max-w-[500px] md:text-left">
+            <h1 className="mb-8 text-5xl font-bold text-gray-100 xs:mb-12 md-l:text-6xl">
               I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-500 to-amber-500 bg-clip-text text-transparent">
                 interested
@@ -23,21 +22,19 @@ export default function HeroContent() {
               in what I&apos;m doing
             </h1>
 
-            <p className="font-normal text-gray-300 lg:text-lg">
-              During my High School days, I was considered one of the best coder
-              by my teachers in the whole school at West Jefferson High School
-              (US). I started learning how to code when I was 16 years old.
+            <p className="border-l-4 border-l-[#B49BFF] pl-3 font-semibold text-gray-300 lg:text-lg">
+              During my High School (2023), I was considered one of the best
+              coder by my teachers in the whole school at West Jefferson High
+              School (US). I started learning how to code when I was 16 years
+              old.
             </p>
           </div>
 
-          <div className="xs:mx-auto flex max-w-[460px] flex-col items-start gap-4 font-semibold md:max-w-none">
-            <Link
-              className="flex items-center gap-2 rounded-md border border-[#764AF1]/70 bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text px-3 py-2 tracking-wide text-transparent"
-              href="mailto:jhonquenano27@gmail.com"
-            >
+          <div className="flex max-w-[460px] flex-col items-start gap-4 font-semibold xs:mx-auto md:max-w-none">
+            <span className="flex items-center gap-2 rounded-md border border-[#B49BFF]/70 bg-gradient-to-r from-purple-300 to-amber-400 bg-clip-text px-[14px] py-2 tracking-wide text-transparent">
               <MailCheck size={18} className="text-purple-300" />
               jhonquenano27@gmail.com
-            </Link>
+            </span>
 
             <PulseLink
               pulseColor="#FBBF24"
@@ -46,7 +43,7 @@ export default function HeroContent() {
               <div className="flex items-center gap-2">
                 <FileCheck2 size={18} className="text-purple-300" />
 
-                <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-300 to-amber-400 bg-clip-text text-transparent">
                   Résumé CV
                 </span>
               </div>
@@ -56,7 +53,7 @@ export default function HeroContent() {
 
         <Image
           src="/hero.svg"
-          className="md-l:w-[400px] md-l:h-[400px] lg-l:w-[500px] lg-l:h-[500px] xl-l:w-[550px] xl-l:h-[550px] lg-l:justify-self-start animate-spin-slow hidden self-center md:block md:justify-self-end"
+          className="hidden animate-spin-slow self-center md:block md:justify-self-end md-l:h-[400px] md-l:w-[400px] lg-l:h-[500px] lg-l:w-[500px] lg-l:justify-self-start xl-l:h-[570px] xl-l:w-[570px]"
           alt="Coding icons"
           width={300}
           height={300}
