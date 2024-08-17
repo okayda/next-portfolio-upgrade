@@ -6,7 +6,7 @@ export default function BlackHole() {
       playsInline
       loop
       muted
-      className="absolute left-0 top-[-455px] -z-[5] h-[650px] w-full rotate-180 object-cover"
+      className="absolute left-0 top-[-455px] -z-10 h-[650px] w-full rotate-180 object-cover"
     >
       <source src="/video/blackHole.webm" type="video/webm" />
     </video>

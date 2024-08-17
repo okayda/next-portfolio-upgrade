@@ -18,10 +18,6 @@ const config = {
       },
     },
     extend: {
-      boxShadow: {
-        custom: "rgba(180, 155, 255, 0.8) 0px 10px 50px",
-      },
-
       screens: {
         xs: "460px",
         "md-l": "880px",

@@ -9,11 +9,10 @@ export default function Home() {
   return (
     <>
       <Particles
-        className="fixed left-0 top-0 -z-50 h-full w-full"
-        quantity={140}
+        className="-z-5 fixed left-0 top-0 h-full w-full"
+        quantity={130}
         ease={80}
         color={"#FFF"}
-        refresh
       />
 
       <section>
