@@ -7,13 +7,13 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function SkillsContent() {
   return (
-    <div className="py-48">
+    <div className="pb-20 pt-48 lg:pb-48">
       <div className="mb-6 flex xs:justify-center lg:justify-start">
         <GradientText text="Skills & Certificates" />
       </div>
 
       <div className="mx-auto max-w-[460px] md:max-w-[630px] lg:max-w-[1024px] xl:mx-0 xl:max-w-none">
-        <h2 className="mb-10 text-4xl font-medium text-gray-100">
+        <h2 className="mb-10 text-4xl font-medium leading-tight text-gray-100 xs:text-center lg:text-left">
           <span className="bg-gradient-to-r from-purple-500 to-amber-500 bg-clip-text text-transparent">
             Technologies
           </span>{" "}
@@ -22,11 +22,11 @@ export default function SkillsContent() {
 
         <div className="lg:flex lg:justify-between xl:gap-4">
           <div className="mb-8 flex max-w-[630px] flex-col gap-6 lg:mb-0 xl:max-w-[600px] xl:justify-between xl:border-r-4 xl:border-r-[#B49BFF] xl:pr-4">
-            <ul className="flex flex-wrap gap-2 font-medium text-gray-300">
+            <ul className="flex flex-wrap justify-center gap-2 font-medium text-gray-300 lg:justify-start">
               {skills.map((skill) => (
                 <li
                   key={skill.name}
-                  className="flex items-center gap-2 rounded-md border border-[#B49BFF]/70 px-3 py-1 text-[15px]"
+                  className="flex items-center gap-2 rounded-md border border-[#B49BFF]/50 px-3 py-1 text-[15px]"
                 >
                   <Image src={skill.svg} alt="" height={16} width={16} />
 

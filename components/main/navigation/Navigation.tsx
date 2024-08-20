@@ -6,7 +6,7 @@ import ShineBorder from "@/components/animation/ShineBorder";
 
 export default function Navigation() {
   return (
-    <div className="fixed left-0 top-0 z-[20] h-[65px] w-full bg-[#03001417] shadow-lg shadow-[#2A0E61]/70 backdrop-blur-md">
+    <div className="fixed left-0 top-0 z-10 h-[65px] w-full bg-[#03001444] shadow-lg shadow-[#2A0E61]/70 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-[480px] items-center px-3 sm:max-w-[1400px] md:px-8">
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <DesktopNav />

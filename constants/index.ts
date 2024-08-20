@@ -63,7 +63,7 @@ export const skills = [
   },
   {
     name: "TailwindCSS",
-    svg: "/svgs/tailwindCSS.svg",
+    svg: "/svgs/tailwindcss.svg",
   },
   {
     name: "Git",
@@ -87,7 +87,7 @@ export const skills = [
   },
   {
     name: "Node.js",
-    svg: "/svgs/Nodejs.svg",
+    svg: "/svgs/nodejs.svg",
   },
   {
     name: "Express.js",

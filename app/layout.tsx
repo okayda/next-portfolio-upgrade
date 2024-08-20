@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 import Navigation from "@/components/main/navigation/Navigation";
+import Footer from "@/components/main/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
         className={cn(
           "min-h-screen bg-[#030014] font-sans antialiased",
@@ -32,9 +33,11 @@ export default function RootLayout({
           <Navigation />
         </header>
 
-        <main className="container mx-auto px-3 text-white md:px-8">
-          {children}
-        </main>
+        <main className="container mx-auto px-3 md:px-8">{children}</main>
+
+        <footer className="container mx-auto px-3 md:px-8">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
