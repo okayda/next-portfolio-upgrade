@@ -15,11 +15,10 @@ export default function HeroContent() {
 
           <div className="mb-10 max-w-[460px] xs:mx-auto xs:mb-12 xs:text-center md:mx-0 md:max-w-[500px] md:text-left">
             <h1 className="mb-8 text-5xl font-bold text-gray-100 xs:mb-12 md-l:text-6xl">
-              I&apos;m{" "}
               <span className="bg-gradient-to-r from-purple-500 to-amber-500 bg-clip-text text-transparent">
-                interested
+                Learning
               </span>{" "}
-              in what I&apos;m doing
+              things is my passion
             </h1>
 
             <p className="border-l-4 border-l-[#B49BFF] pl-3 font-semibold text-gray-300 lg:text-lg">

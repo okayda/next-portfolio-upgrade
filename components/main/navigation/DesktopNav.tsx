@@ -3,9 +3,9 @@ import { navigation } from "@/constants";
 
 export default function DesktopNav() {
   return (
-    <div className="rounded-md border border-[#764AF1]/50 bg-[#0300145e] sm:w-[480px]">
+    <div className="rounded-md border border-none sm:w-[140px]">
       <nav>
-        <ul className="flex h-[40px] w-full items-center justify-between px-5 font-sans text-gray-200">
+        <ul className="flex h-[40px] w-full items-center justify-between font-sans font-medium text-gray-200">
           {navigation.map(
             ({ label, route }: { label: string; route: string }) => (
               <li key={label}>

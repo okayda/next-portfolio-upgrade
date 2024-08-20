@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import DesktopNav from "./DesktopNav";
 import ShineBorder from "@/components/animation/ShineBorder";
-import { Github } from "lucide-react";
 
 export default function Navigation() {
   return (
@@ -17,7 +18,7 @@ export default function Navigation() {
             >
               <div className="flex items-center justify-center gap-3">
                 <span className="self-center tracking-wide">Github</span>
-                <Github size={18} />
+                <Image src="/svgs/github.svg" alt="" height={16} width={16} />
               </div>
             </ShineBorder>
           </Link>
