@@ -6,7 +6,7 @@ export const navigation = [
 
   {
     label: "Projects",
-    route: "/",
+    route: "/projects",
   },
 ];
 
@@ -33,7 +33,7 @@ export const certificates = [
   },
 
   {
-    date: "July 4, 2024",
+    date: "July 3, 2024",
     title: "TypeScript (Udemy) - by Manik Cloudaffle",
     url: "https://www.udemy.com/certificate/UC-b42afc74-1fb2-4d75-93c7-9dbdafecd6f4/",
     icon: "/svgs/udemy.svg",
@@ -100,5 +100,93 @@ export const skills = [
   {
     name: "Mongoose",
     svg: "/svgs/mongoose.svg",
+  },
+];
+
+export const projects = [
+  {
+    view: "https://post-social-platform-beryl.vercel.app/",
+    code: "https://github.com/okayda/post-social-platform",
+    img: "/assets/post.webp",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "shadcn-UI",
+      "MongoDB",
+      "Mongoose",
+      "Clerk-auth",
+    ],
+    title: "Post Social Platform",
+  },
+  {
+    view: "https://task-management-jhon-quenano.vercel.app/",
+    code: "https://github.com/okayda/task-management",
+    img: "/assets/taskManagement.webp",
+    technologies: [
+      "Next.js",
+      "SASS",
+      "TypeScript",
+      "Redux-toolkit",
+      "Drag & Drop",
+      "Framer-Motion",
+      "clerk-auth",
+    ],
+    title: "Task Management",
+  },
+
+  {
+    view: "https://next-jhon-quenano-movie-db.vercel.app/",
+    code: "https://github.com/okayda/next-movies-db",
+    img: "/assets/movies.webp",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "shadcn-UI",
+      "Framer-Motion",
+      "API",
+    ],
+    title: "Movies DB API",
+  },
+
+  {
+    view: "https://jhon-okayda-spaces-tourism-pages.netlify.app/",
+    code: "https://github.com/okayda/react-space-pages",
+    img: "/assets/space.webp",
+    technologies: ["React.js", "SASS", "Framer-Motion"],
+    title: "Animated 4 Pages",
+  },
+
+  {
+    view: "https://jhon-okayda-photosnap-multi-page.vercel.app/",
+    code: "https://github.com/okayda/next-photo-gallery",
+    img: "/assets/photosnap.webp",
+    technologies: ["Next.js", "SASS"],
+    title: "Photosnap 4 Pages",
+  },
+
+  {
+    view: "https://pay-api-jhon-quenano.vercel.app/",
+    code: "https://github.com/okayda/next-pay-multi",
+    img: "/assets/pay.webp",
+    technologies: ["Next.js", "TailwindCSS", "shadcn-UI"],
+    title: "PayAPI 4 Pages",
+  },
+
+  {
+    view: "https://next-jhon-quenano-nfts-landing-page.vercel.app/",
+    code: "https://github.com/okayda/next-nft",
+    img: "/assets/crypto.webp",
+    technologies: ["Next.js", "TailwindCSS"],
+    title: "Crypto Single Page",
+  },
+
+  {
+    view: "https://jhon-okayda-manage-page.netlify.app/",
+    code: "https://github.com/okayda/react-manage-landing-page",
+    img: "/assets/manage.webp",
+    technologies: ["React.js", "SASS"],
+    title: "Manage Single Page",
   },
 ];

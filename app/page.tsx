@@ -9,18 +9,6 @@ const Particles = dynamic(() => import("@/components/animation/Particles"), {
 export default function Home() {
   return (
     <>
-      {/* Mobile & Tablet Particles */}
-      <Particles
-        className="fixed left-0 top-0 -z-10 h-full w-full lg:hidden"
-        quantity={60}
-      />
-
-      {/* Destop Particles */}
-      <Particles
-        className="fixed left-0 top-0 -z-10 hidden h-full w-full lg:block"
-        quantity={140}
-      />
-
       <section>
         <Hero />
       </section>

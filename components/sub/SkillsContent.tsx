@@ -3,11 +3,14 @@ import Link from "next/link";
 
 import { skills, certificates } from "@/constants";
 import GradientText from "../animation/GradientText";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function SkillsContent() {
   return (
-    <div className="pb-20 pt-48 lg:pb-48">
+    <div
+      itemScope
+      itemType="https://schema.org/Person"
+      className="pb-20 pt-48 lg:pb-48"
+    >
       <div className="mb-6 flex xs:justify-center lg:justify-start">
         <GradientText text="Skills & Certificates" />
       </div>
@@ -26,43 +29,65 @@ export default function SkillsContent() {
               {skills.map((skill) => (
                 <li
                   key={skill.name}
+                  itemProp="knowsAbout"
                   className="flex items-center gap-2 rounded-md border border-[#B49BFF]/50 px-3 py-1 text-[15px]"
                 >
-                  <Image src={skill.svg} alt="" height={16} width={16} />
-
+                  <Image
+                    src={skill.svg}
+                    alt={skill.name}
+                    height={16}
+                    width={16}
+                  />
                   {skill.name}
                 </li>
               ))}
             </ul>
 
-            <ul className="divide-y divide-dashed divide-[#B49BFF]/70 border-l border-dashed border-[#B49BFF]/70">
+            <ul
+              itemScope
+              itemType="https://schema.org/ItemList"
+              className="divide-y divide-dashed divide-[#B49BFF]/70 border-l border-dashed border-[#B49BFF]/70"
+            >
               {certificates.map((certificate, i) => (
-                <li className="relative pl-14" key={i}>
+                <li
+                  key={i}
+                  itemScope
+                  itemProp="itemListElement"
+                  itemType="https://schema.org/ListItem"
+                  className="relative pl-14"
+                >
+                  <meta itemProp="position" content={`${i + 1}`} />
                   <div className="absolute left-3 top-3 flex items-center justify-center rounded-full bg-slate-950">
-                    <Avatar className="m-auto size-8">
-                      <AvatarImage
-                        src={certificate.icon}
-                        alt=""
-                        className="object-contain"
-                      />
-                      <AvatarFallback className="bg-slate-800">
-                        {certificate.title[0]}
-                      </AvatarFallback>
-                    </Avatar>
+                    <Image
+                      itemProp="contentUrl"
+                      src={certificate.icon}
+                      alt=""
+                      className="m-auto size-8"
+                      width={32}
+                      height={32}
+                    />
                   </div>
 
                   <div className="flex items-end justify-between gap-4 pb-4">
                     <div>
-                      <time className="text-muted-foreground text-xs text-gray-400">
+                      <time
+                        itemProp="datePublished"
+                        dateTime={certificate.date}
+                        className="text-muted-foreground text-xs text-gray-400"
+                      >
                         {certificate.date}
                       </time>
 
-                      <h3 className="text-sm font-medium text-gray-300">
+                      <h3
+                        itemProp="name"
+                        className="text-sm font-medium text-gray-300"
+                      >
                         {certificate.title}
                       </h3>
                     </div>
 
                     <Link
+                      itemProp="url"
                       href={certificate.url}
                       target="_blank"
                       className="text-sm font-medium tracking-wider text-[#1E90FF]"
@@ -76,30 +101,44 @@ export default function SkillsContent() {
           </div>
 
           <div className="mx-auto flex max-w-[320px] flex-col gap-8 md:mx-0 md:max-w-none md:flex-row md:gap-4 lg:flex-col lg:items-center xl:max-h-[427px] xl:flex-row xl:items-start xl:gap-8">
-            <figure className="flex flex-col items-center gap-2 md:w-[440px] md:items-start lg:w-[220px] xl:w-[270px]">
+            <figure
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              className="flex flex-col items-center gap-2 md:w-[440px] md:items-start lg:w-[220px] xl:w-[270px]"
+            >
               <Image
+                itemProp="contentUrl"
                 src="/self.webp"
                 alt="Graduation picture"
                 className="overflow-hidden rounded-md"
                 width={270}
                 height={370}
               />
-
-              <figcaption className="text-sm font-medium text-gray-300">
+              <figcaption
+                itemProp="caption"
+                className="text-sm font-medium text-gray-300"
+              >
                 West Jefferson High School (2023)
               </figcaption>
             </figure>
 
-            <figure className="flex flex-col items-center gap-2 lg:w-[300px] xl:w-[380px]">
+            <figure
+              itemScope
+              itemType="https://schema.org/ImageObject"
+              className="flex flex-col items-center gap-2 lg:w-[300px] xl:w-[380px]"
+            >
               <Image
+                itemProp="contentUrl"
                 src="/assets/mcdo.webp"
                 alt="Macdonalds recognized award"
                 className="w-full overflow-hidden rounded-md"
                 width={340}
                 height={260}
               />
-
-              <figcaption className="text-center text-sm font-medium text-gray-300 md:text-left lg:text-center xl:text-left">
+              <figcaption
+                itemProp="caption"
+                className="text-center text-sm font-medium text-gray-300 md:text-left lg:text-center xl:text-left"
+              >
                 Recognized award for exceptional contributions as a service crew
                 member at McDonalds (US)
               </figcaption>

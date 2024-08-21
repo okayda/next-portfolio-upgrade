@@ -18,6 +18,7 @@ export default function PulseLink({
 }: PulsatingButtonProps) {
   return (
     <Link
+      itemProp="url"
       href="https://docs.google.com/document/d/1Xthb8IRlbVBGrqj9y7K5CAic3ueBa2-INK3-2kdSFMo/edit?usp=sharing"
       target="_blank"
       className={cn(
