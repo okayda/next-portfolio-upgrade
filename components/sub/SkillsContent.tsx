@@ -32,12 +32,7 @@ export default function SkillsContent() {
                   itemProp="knowsAbout"
                   className="flex items-center gap-2 rounded-md border border-[#B49BFF]/50 px-3 py-1 text-[15px]"
                 >
-                  <Image
-                    src={skill.svg}
-                    alt={skill.name}
-                    height={16}
-                    width={16}
-                  />
+                  <Image src={skill.svg} alt="" height={16} width={16} />
                   {skill.name}
                 </li>
               ))}

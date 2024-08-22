@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="pb-6 pt-16 text-center font-medium text-gray-400">
+    <div className="pb-6 pt-16 text-center text-sm font-medium text-gray-400">
       <p>
         Created from my
         <span className="text-rose-400"> Hearth</span> &
@@ -8,8 +8,8 @@ export default function Footer() {
       </p>
       <p>
         <meta itemProp="copyrightYear" content="2024" />
-        Copyright © 2024 Design, Inspired, Developed by
-        <span itemProp="creator" className="text-amber-400">
+        Copyright © 2024 Design, Inspired, Developed by{" "}
+        <span itemProp="creator" className="block text-amber-400 xs:inline">
           Jhon Queñano
         </span>
         .
