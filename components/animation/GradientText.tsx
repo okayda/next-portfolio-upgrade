@@ -8,7 +8,7 @@ export default function GradientText({ text = "Your text" }: { text: string }) {
         <div
           className={`absolute inset-0 block h-full w-full animate-gradient bg-gradient-to-r from-[#FFAA40]/50 via-[#FFF]/50 to-[#FFAA40]/50 bg-[length:var(--bg-size)_100%] p-[1px] [border-radius:inherit] ![mask-composite:subtract] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]`}
         />
-        <Image src="/svgs/star.svg" alt="" width={24} height={24} />
+        <Image src="/svgs/star.svg" alt="" width={22} height={22} />
         <hr className="mx-2 h-4 w-[1px] shrink-0 bg-[#B49BFF]" />{" "}
         <span
           className={cn(

@@ -9,7 +9,7 @@ export default function SkillsContent() {
     <div
       itemScope
       itemType="https://schema.org/Person"
-      className="pb-20 pt-48 lg:pb-48"
+      className="mb-20 mt-48 lg:mb-48"
     >
       <div className="mb-6 flex xs:justify-center lg:justify-start">
         <GradientText text="Skills & Certificates" />
@@ -134,8 +134,9 @@ export default function SkillsContent() {
                 itemProp="caption"
                 className="text-center text-sm font-medium text-gray-300 md:text-left lg:text-center xl:text-left"
               >
-                Recognized award for exceptional contributions as a service crew
-                member at McDonalds (US)
+                Recognized award for my exceptional contributions as a service
+                crew member by bringing positive customer feedback to our
+                McDonalds branch (US)
               </figcaption>
             </figure>
           </div>
