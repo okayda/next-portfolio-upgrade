@@ -105,7 +105,7 @@ export const skills = [
 
 export const projects = [
   {
-    view: "https://post-social-platform-beryl.vercel.app/",
+    view: "https://post-social-platform.vercel.app/",
     code: "https://github.com/okayda/post-social-platform",
     img: "/assets/post.webp",
     technologies: [
