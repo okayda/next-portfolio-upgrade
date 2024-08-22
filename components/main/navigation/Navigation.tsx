@@ -7,7 +7,7 @@ import ShineBorder from "@/components/animation/ShineBorder";
 export default function Navigation() {
   return (
     <div
-      className="fixed left-0 top-0 z-10 h-[65px] w-full bg-[#03001444] shadow-lg shadow-[#2A0E61]/70 backdrop-blur-md"
+      className="fixed left-0 top-0 z-50 h-[65px] w-full bg-[#03001444] shadow-lg shadow-[#2A0E61]/70 backdrop-blur-md"
       itemScope
       itemType="https://schema.org/SiteNavigationElement"
     >
