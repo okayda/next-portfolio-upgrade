@@ -11,12 +11,12 @@ export default function SkillsContent() {
       itemType="https://schema.org/Person"
       className="mb-20 mt-48 lg:mb-48"
     >
-      <div className="mb-6 flex xs:justify-center lg:justify-start">
+      <div className="mb-6 flex justify-center lg:justify-start">
         <GradientText text="Skills & Certificates" />
       </div>
 
       <div className="mx-auto max-w-[460px] md:max-w-[630px] lg:max-w-[1024px] xl:mx-0 xl:max-w-none">
-        <h2 className="mb-10 text-4xl font-medium leading-tight text-gray-100 xs:text-center lg:text-left">
+        <h2 className="mb-10 text-center text-4xl font-medium leading-tight text-gray-100 lg:text-left">
           <span className="bg-gradient-to-r from-purple-500 to-amber-500 bg-clip-text text-transparent">
             Technologies
           </span>{" "}
