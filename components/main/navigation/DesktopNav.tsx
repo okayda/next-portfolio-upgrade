@@ -10,7 +10,7 @@ export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <div className="w-[125px] rounded-md border border-none sm:w-[140px]">
+    <div className="w-[120px] rounded-md border border-none sm:w-[140px]">
       <nav itemScope itemType="https://schema.org/SiteNavigationElement">
         <ul className="flex h-[40px] w-full items-center justify-between font-sans font-medium text-gray-100">
           {navigation.map(({ label, route }) => (
