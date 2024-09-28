@@ -105,9 +105,9 @@ export const skills = [
 
 export const projects = [
   {
-    view: "https://post-social-platform.vercel.app/",
-    code: "https://github.com/okayda/post-social-platform",
-    img: "/assets/post.webp",
+    view: "https://next-crud-operations.vercel.app/",
+    code: "https://github.com/okayda/next-crud-operations",
+    img: "/assets/socialMedia.webp",
     technologies: [
       "Next.js",
       "TailwindCSS",
@@ -117,8 +117,9 @@ export const projects = [
       "Mongoose",
       "Clerk-auth",
     ],
-    title: "Post Social Platform",
+    title: "Social Media",
   },
+
   {
     view: "https://task-management-jhon-quenano.vercel.app/",
     code: "https://github.com/okayda/task-management",
@@ -133,6 +134,14 @@ export const projects = [
       "clerk-auth",
     ],
     title: "Task Management",
+  },
+
+  {
+    view: "https://next-fusion-quiz.vercel.app/",
+    code: "https://github.com/okayda/next-fusion-quiz",
+    img: "/assets/quiz.webp",
+    technologies: ["Next.js", "TailwindCSS", "TypeScript", "shadcn-UI"],
+    title: "Fusion Quiz",
   },
 
   {
