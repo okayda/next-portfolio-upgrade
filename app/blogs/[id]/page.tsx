@@ -14,7 +14,7 @@ export default function page() {
         <div itemProp="articleBody" className="mx-auto max-w-[800px]">
           <h2
             itemProp="headline"
-            className="mb-20 text-center text-3xl font-semibold text-gray-100 md:text-left md:text-4xl"
+            className="mb-20 text-3xl font-semibold text-gray-100 md:text-4xl"
           >
             Async/Await Concept
           </h2>
@@ -372,41 +372,37 @@ fetchData()
             videos.
           </p>
 
-          <ul className="mb-6 list-disc pl-5 text-gray-300">
-            <li className="mb-4">
-              <span className="mb-4 block">
-                <strong>JavaScript Visualized - Promise Execution</strong>
-              </span>
-              <iframe
-                width="500"
-                height="260"
-                src="https://www.youtube.com/embed/Xs1EMmBLpn4?si=3Wl_vOd6XESVbW09"
-                className="mx-auto size-full h-[260px] rounded-md border border-[#B49BFF]/30 md:h-[400px]"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </li>
-            <li className="mb-4">
-              <span className="mb-4 block">
-                <strong>
-                  JavaScript Visualized - Event Loop, Web APIs, Microtask Queue
-                </strong>
-              </span>
+          <div className="mb-6 text-gray-300">
+            <span className="mb-4 block">
+              <strong>JavaScript Visualized - Promise Execution</strong>
+            </span>
 
-              <iframe
-                width="500"
-                height="260"
-                src="https://www.youtube.com/embed/eiC58R16hb8?si=UD4FpOmM2kmHe_Bm"
-                className="mx-auto size-full h-[260px] rounded-md border border-[#B49BFF]/30 md:h-[400px]"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </li>
-          </ul>
+            <iframe
+              width="500"
+              height="210"
+              src="https://www.youtube.com/embed/Xs1EMmBLpn4?si=3Wl_vOd6XESVbW09"
+              className="mx-auto mb-8 size-full h-[210px] rounded-md border border-[#B49BFF]/30 xs:h-[280px] md:h-[400px]"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+
+            <span className="mb-4 block">
+              <strong>JavaScript Visualized - Event Loop</strong>
+            </span>
+
+            <iframe
+              width="500"
+              height="210"
+              src="https://www.youtube.com/embed/eiC58R16hb8?si=UD4FpOmM2kmHe_Bm"
+              className="mx-auto size-full h-[210px] rounded-md border border-[#B49BFF]/30 xs:h-[280px] md:h-[400px]"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
 
           <h4 className="mb-2 mt-10 text-2xl font-semibold text-gray-200">
             Performance considerations
