@@ -8,6 +8,11 @@ export const navigation = [
     label: "Projects",
     route: "/projects",
   },
+
+  {
+    label: "Blogs",
+    route: "/blogs",
+  },
 ];
 
 export const certificates = [
@@ -132,6 +137,7 @@ export const projects = [
       "Drag & Drop",
       "Framer-Motion",
       "clerk-auth",
+      "upload-thing",
     ],
     title: "Task Management",
   },
@@ -139,7 +145,7 @@ export const projects = [
   {
     view: "https://next-fusion-quiz.vercel.app/",
     code: "https://github.com/okayda/next-fusion-quiz",
-    img: "/assets/quiz.webp",
+    img: "/assets/fusionQuiz.webp",
     technologies: ["Next.js", "TailwindCSS", "TypeScript", "shadcn-UI"],
     title: "Fusion Quiz",
   },

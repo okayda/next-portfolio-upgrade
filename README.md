@@ -1,6 +1,5 @@
 # Portfolio - Performance & Optimization
 
-- 0 Library installed. The more library that are installed, the more the initial load time of this webpage
 - Video and Particles animations are loaded lazily, prioritizing the content first. This ensures that the content is show first, which is beneficial for users with slower internet speed
 - All icons used in this portfolio are manually defined. The default icons provided by Next.js [lucide-react] have been uninstalled to maintain a lightweight bundle
 - All images used in this portfolio are compressed into WebP and WebM formats to further reduce the bundle size
