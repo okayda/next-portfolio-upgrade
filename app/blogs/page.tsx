@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <section className="mt-36">
+    <section className="pt-36">
       <div className="mx-auto grid max-w-[410px] gap-10 sm:max-w-[800px] sm:grid-cols-2 sm:gap-4 lg:max-w-[1260px] lg:grid-cols-3 lg:gap-6">
         <Link
           href="/blogs/blog-1"
