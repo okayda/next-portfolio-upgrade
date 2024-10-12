@@ -5,7 +5,11 @@ import PulseLink from "../animation/PulseLink";
 
 export default function HeroContent() {
   return (
-    <div itemScope itemType="https://schema.org/Person" className="mt-40">
+    <div
+      itemScope
+      itemType="https://schema.org/Person"
+      className="mt-40 border-b-4 border-dashed border-[#b49bff] pb-24"
+    >
       <div className="md:grid md:grid-cols-2">
         <div className="lg-l:self-center">
           <div className="mb-6 flex xs:justify-center md:justify-start">
