@@ -8,7 +8,7 @@ export default function HeroContent() {
     <div
       itemScope
       itemType="https://schema.org/Person"
-      className="border-b-4 border-dashed border-[#b49bff] pb-24 pt-40"
+      className="mt-40 border-b-4 border-dashed border-[#b49bff] pb-24 xl:border-none"
     >
       <div className="md:grid md:grid-cols-2">
         <div className="lg-l:self-center">
