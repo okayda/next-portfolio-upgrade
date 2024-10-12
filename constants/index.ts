@@ -31,7 +31,7 @@ export const blogs = [
     title: "Focus on yourself",
     descrition:
       "In this blog post, have you ever walked into a crowded place and felt like all eyes were on you.",
-    date: "10 / 11 / 24",
+    date: "10 / 12 / 24",
   },
 ];
 
