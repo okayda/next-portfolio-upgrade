@@ -15,6 +15,26 @@ export const navigation = [
   },
 ];
 
+export const blogs = [
+  {
+    link: "/blogs/blog-1",
+    src: "/assets/firstBlog.webp",
+    title: "Async/Await Concept",
+    descrition:
+      "In this blog post, we will explore & focus how async/await works.",
+    date: "10 / 5 / 24",
+  },
+
+  {
+    link: "/blogs/blog-2",
+    src: "/assets/secondBlog.webp",
+    title: "Focus on yourself",
+    descrition:
+      "In this blog post, have you ever walked into a crowded place and felt like all eyes were on you.",
+    date: "10 / 11 / 24",
+  },
+];
+
 export const certificates = [
   {
     date: "May 5, 2022",

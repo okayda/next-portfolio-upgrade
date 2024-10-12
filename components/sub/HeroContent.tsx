@@ -34,33 +34,12 @@ export default function HeroContent() {
             </p>
           </div>
 
-          <div className="flex max-w-[460px] flex-col items-start gap-4 font-semibold xs:mx-auto md:max-w-none">
-            <span
-              itemProp="email"
-              className="flex items-center gap-2 rounded-md border border-[#B49BFF]/70 bg-gradient-to-r from-purple-300 to-amber-400 bg-clip-text px-[16px] py-2 tracking-wide text-transparent"
-            >
-              <Image
-                src="/svgs/email.svg"
-                alt=""
-                width={18}
-                height={18}
-                className="stroke-purple-300"
-              />
-              jhonquenano27@gmail.com
-            </span>
-
+          <div className="flex max-w-[460px] font-semibold xs:mx-auto md:max-w-none">
             <PulseLink
               pulseColor="#FBBF24"
               className="bg-transparent tracking-wider"
             >
-              <span className="flex items-center gap-2 bg-gradient-to-r from-purple-300 to-amber-400 bg-clip-text text-transparent">
-                <Image
-                  src="/svgs/resume.svg"
-                  alt=""
-                  width={18}
-                  height={18}
-                  className="stroke-purple-300"
-                />
+              <span className="bg-gradient-to-r from-purple-300 to-amber-400 bg-clip-text text-transparent">
                 Résumé CV
               </span>
             </PulseLink>

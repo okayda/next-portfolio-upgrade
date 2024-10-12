@@ -33,14 +33,13 @@ export default function ProjectContent({
           alt={title}
           width={480}
           height={480}
-          loading="lazy"
-          className="w-full object-contain"
+          className="h-[250px] w-full object-cover shadow-xl shadow-[#2A0E61]/50"
         />
 
         <div className="p-4">
           <h3
             itemProp="headline"
-            className="mb-4 text-2xl font-semibold text-gray-200"
+            className="mb-4 text-2xl font-semibold text-gray-200 lg-l:mb-6"
           >
             {title}
           </h3>
@@ -64,7 +63,7 @@ export default function ProjectContent({
           itemProp="url"
           href={view}
           target="_blank"
-          className="w-full px-4 py-3"
+          className="w-full px-4 py-3 text-amber-500"
         >
           View
         </Link>
