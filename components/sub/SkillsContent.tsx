@@ -9,9 +9,9 @@ export default function SkillsContent() {
     <div
       itemScope
       itemType="https://schema.org/Person"
-      className="mb-20 mt-24 lg:mb-48"
+      className="pb-20 pt-24 lg:pb-48"
     >
-      <div className="mb-8 flex md:mb-6">
+      <div className="mb-8 flex justify-center md:mb-6 lg:justify-start">
         <GradientText text="Skills & Certificates" />
       </div>
 
