@@ -130,6 +130,38 @@ export const skills = [
 
 export const projects = [
   {
+    view: "https://task-management-2-0.vercel.app/",
+    code: "https://github.com/okayda/full-stack-task-management-2.0",
+    img: "/assets/taskManagementv2.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Drag & Drop",
+      "Appwrite-Auth",
+      "Appwrite-Database",
+      "Tanstack-Query",
+      "Hono.js",
+    ],
+    title: "Task Management 2.0",
+  },
+
+  {
+    view: "https://task-management-jhon-quenano.vercel.app/",
+    code: "https://github.com/okayda/task-management",
+    img: "/assets/taskManagementv1.webp",
+    technologies: [
+      "Next.js",
+      "SASS",
+      "TypeScript",
+      "Redux-toolkit",
+      "Drag & Drop",
+      "Framer-Motion",
+    ],
+    title: "Task Management 1.0",
+  },
+
+  {
     view: "https://next-crud-operations.vercel.app/",
     code: "https://github.com/okayda/next-crud-operations",
     img: "/assets/socialMedia.webp",
@@ -143,23 +175,6 @@ export const projects = [
       "Clerk-auth",
     ],
     title: "Social Media",
-  },
-
-  {
-    view: "https://task-management-jhon-quenano.vercel.app/",
-    code: "https://github.com/okayda/task-management",
-    img: "/assets/taskManagement.webp",
-    technologies: [
-      "Next.js",
-      "SASS",
-      "TypeScript",
-      "Redux-toolkit",
-      "Drag & Drop",
-      "Framer-Motion",
-      "clerk-auth",
-      "upload-thing",
-    ],
-    title: "Task Management",
   },
 
   {
