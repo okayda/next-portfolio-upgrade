@@ -148,7 +148,7 @@ export const projects = [
 
   {
     view: "https://task-management-jhon-quenano.vercel.app/",
-    code: "https://github.com/okayda/task-management",
+    code: "https://github.com/okayda/front-end-task-management-1.0",
     img: "/assets/taskManagementv1.webp",
     technologies: [
       "Next.js",
